@@ -23,7 +23,7 @@ body {
 nav {
   background-color: var(--nav-bg-color);
   overflow: hidden;
-  padding: 2rem 0;
+  padding: min(2rem, 3%) 0;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -33,7 +33,7 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 min(8rem, 3%);
   float: right;
 }
 
@@ -50,6 +50,14 @@ nav ul li a {
   text-decoration: none;
 }
 
+@media (max-width: 400px) {
+
+  nav ul li a {
+    padding: 1em;
+    width: 100%;
+  }
+
+}
 nav ul li a:hover {
   background-color: var(--hover-bg-color);
   color: var(--nav-text-color);
@@ -70,7 +78,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.2rem, 3vw, 3rem);
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 2rem;
@@ -78,7 +86,7 @@ h2 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
   text-align: center;
   color: var(--nav-bg-color);
 }
@@ -189,13 +197,14 @@ a i:hover{
   text-align: center;
   width: 100%;
   border-bottom: #9b5de5 5px solid;
-  min-height: 60dvh;
+  min-height: 60vh;
 }
 
 a i:visited{
   font-style: none;
   text-decoration: none;
 }
+
 
 /* Footer */
 footer {
