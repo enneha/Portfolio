@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #f0f0f0;
   --main-text-color: #232e21;
-  --nav-bg-color: #9b5de5;
+  --nav-bg-color: #688dea;
   --nav-text-color: white;
   --hover-bg-color: #282A31;
 }
@@ -98,7 +98,7 @@ p {
   text-align: center;
   width: 100vw;
   min-height: 100vh; 
-  border-bottom: #9b5de5 5px solid;
+  border-bottom: var(--nav-bg-color) 5px solid;
   
 }
 
@@ -197,7 +197,7 @@ i:hover{
   padding: 5rem 0;
   text-align: center;
   width: 100%;
-  border-bottom: #9b5de5 5px solid;
+  border-bottom: var(--nav-bg-color) 5px solid;
   min-height: 60vh;
 }
 
